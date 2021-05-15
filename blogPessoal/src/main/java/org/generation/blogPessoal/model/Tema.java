@@ -9,12 +9,8 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
-
-
+import javax.validation.constraints.NotNull;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import com.sun.istack.NotNull;
-
-import org.generation.blogPessoal.model.Postagem;
 
 @Entity
 @Table(name = "tb_tema")
@@ -54,5 +50,5 @@ public class Tema {
 	public void setPostagem(List<Postagem> postagem) {
 		   this.postagem = postagem;
 	}
-		
+	
 }
